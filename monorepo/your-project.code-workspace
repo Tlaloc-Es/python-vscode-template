@@ -1,0 +1,60 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "Service A",
+      "path": "services/service_a"
+    },
+    {
+      "name": "Service B",
+      "path": "services/service_b"
+    },
+  ],
+  "extensions": {
+    "recommendations": [
+      "ms-python.pylint",
+      "ms-python.black-formatter"
+    ]
+  },
+  "settings": {
+    "files.exclude": {
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/.ipynb_checkpoints":true,
+      "**/**.egg-info":true,
+      "**/build":true,
+    },
+    "[python]":{
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+    },
+    "python.linting.pylintArgs": [
+      "--rcfile=.pylintrc"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#fa1b49",
+      "activityBar.activeBorder": "#155e02",
+      "activityBar.background": "#fa1b49",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#155e02",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#fa1b49",
+      "statusBar.background": "#dd0531",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#fa1b49",
+      "statusBarItem.remoteBackground": "#dd0531",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#dd0531",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#dd053199",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    }
+  }
+}
