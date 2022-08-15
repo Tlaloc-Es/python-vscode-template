@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# SSH files
+*.pem
+
+# CSV files
+*.csv
+
 # Distribution / packaging
 .Python
 build/
@@ -77,6 +83,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.ipynb_aml_checkpoints
+*.ipynb
 
 # IPython
 profile_default/
@@ -149,6 +157,10 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# am files
+.amlignore
+*.amltmp
+
 # Cython debug symbols
 cython_debug/
 
@@ -158,3 +170,12 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+#
+
+# Azure
+*amlignore*
+*amltmp*
+*.ipynb_aml_checkpoints
+
+# config
+*.env

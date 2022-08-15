@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+pre-commit = "*"
+pytest = "*"
+mypy = "*"
+ruff = "*"
+commitizen = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+test = "python -m pytest -s -v test/"
+build = "python setup.py bdist_wheel"
+mypy = "mypy src --check-untyped-defs"
+type_check = "mypy src"
+git_hooks_install = "pre-commit install"
+git_hooks_update = "pre-commit autoupdate"
+git_hooks_run = "pre-commit run --all-files"

@@ -6,15 +6,15 @@
         "**/.ipynb_checkpoints":true,
         "**/**.egg-info":true,
         "**/build":true,
+        "**/.ruff_cache":true,
+        "**/.mypy_cache":true
     },
     "[python]":{
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        }
     },
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-    "python.linting.pylintArgs": [
-        "--rcfile=${workspaceFolder}/.pylintrc"
-    ],
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
 }
